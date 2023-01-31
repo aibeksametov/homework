@@ -8,7 +8,7 @@ res=function_1(a)
 print('a = ',res)
 
 def function_1(a):
-    return a*a+a/a
+    return a*a+a/a+8
 
 b=6
 result=fizika_1
