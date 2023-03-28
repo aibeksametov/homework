@@ -1,0 +1,64 @@
+#1 esep
+# n = int(input("Enter size of dictionary: "))
+# rivers = {}
+# for i in range(n):
+#     country, river = input().split()
+#     rivers[river] = country
+
+# print("Enter name of river::")
+# search_rivers = input().split()
+# for river in search_rivers:
+#     if river in rivers:
+#         print(f"The river {river} flows in the country {rivers[river]}")
+#     else:
+#         print(f"The river {river} was not found in the dictionary")
+
+# new_river = input("Enter the name of the river you want to add: ")
+# if new_river in rivers:
+#     print(f"The river {new_river} already in the dictionary!")
+# else:
+#     new_country = input(f"Enter country, in which the river flows: {new_river}: ")
+#     rivers[new_river] = new_country
+#     print(f"The river {new_river} added successfully!!!")
+
+# print("Update dictionary:")
+# for river, country in rivers.items():
+#     print(f"{country}: {river}")
+#2 esep
+# commentators = set()
+
+# while True:
+#     line = input()
+#     if line == "":
+#         break
+#     name, comment = line.split(": ")
+#     commentators.add(name)
+
+# print("Unique comments:", len(commentators))
+#3 esep
+# n = int(input("Enter size of phone book:"))
+# phone_book = {}
+# for i in range(n):
+#     phone, name = input().split()
+#     phone_book[name] = phone
+
+# query = input("Enter name of contact:")
+# if query in phone_book:
+#     print(phone_book[query])
+# else:
+#     print("Not in the phone book")
+#4 esep
+# n = int(input("Enter size of dictionary:"))
+# vacation_schedule = {}
+# for i in range(n):
+#     name, day, month = input().split()
+#     if month not in vacation_schedule:
+#         vacation_schedule[month] = []
+#     vacation_schedule[month].append(name)
+
+
+# requested_month = input("Requested month:")
+# if requested_month in vacation_schedule:
+#     print(" ".join(vacation_schedule[requested_month]))
+# else:
+#     print()
