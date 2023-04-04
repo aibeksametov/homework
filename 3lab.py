@@ -3,12 +3,7 @@ A = int(input("A="))
 B = int(input("B="))
 1
 print(list(range(A,B)))
-2
-if A<B:
-   print(list(range(A,B)))
-else:
-   print(list(range(B,A)))
-3
+
 if (B-1)%2==1:
    print(list(range(B-1,A,-2)))
 if (B-1)%2==0:
