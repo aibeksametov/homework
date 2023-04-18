@@ -1,0 +1,54 @@
+# #module random
+# import datetime
+# import random
+# def choose_element(lst):
+#     return random.choice(lst)
+
+# def generate_random_date(start_date, end_date):
+#     days = (end_date - start_date).days
+#     random_days = random.randint(0, days)
+#     return start_date + datetime.timedelta(days=random_days)
+# def generate_password(length):
+#     password = ''
+#     for i in range(length):
+#         password += random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
+#     return password
+# def shuffle_list(lst):
+#     random.shuffle(lst)
+#     return lst
+# def generate_random_number(start, end):
+#     return random.randint(start, end)
+# lst = [1, 2, 3, 4, 5]
+# print(choose_element(lst))
+# start_date = datetime.date(2022, 1, 1)
+# end_date = datetime.date(2022, 12, 31)
+# print(generate_random_date(start_date, end_date))
+# print(generate_password(10))
+# print(shuffle_list(lst))
+# print(generate_random_number(1, 10))
+# #module numpy
+# import numpy as np
+
+# my_list = [1, 2, 3, 4, 5]
+# my_array = np.array(my_list)
+# print(my_array)
+# my_array = np.arange(1, 10, 2)
+# print(my_array)
+# my_array = np.linspace(0, 10, 5)
+# print(my_array)
+# my_array = np.array([1, 5, 3, 7, 2])
+# max_value = np.max(my_array)
+# print(max_value)
+# my_array = np.array([1, 2, 3, 4, 5])
+# mean_value = np.mean(my_array)
+# print(mean_value)
+#tkinker
+import tkinter as tk
+root = tk.Tk()
+root.geometry('300x300')
+canvas = tk.Canvas(root, width=200, height=200)
+canvas.pack()
+text_style = ('Arial', 30, 'bold')
+student_name = input("Enter name: ")
+canvas.create_text(100, 100, text=student_name, font=text_style)
+root.mainloop()
